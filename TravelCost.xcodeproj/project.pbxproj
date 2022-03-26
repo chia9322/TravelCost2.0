@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C243F5D2274E5CC200EB55CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243F5D1274E5CC200EB55CE /* AppDelegate.swift */; };
+		C243F5D4274E5CC200EB55CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243F5D3274E5CC200EB55CE /* SceneDelegate.swift */; };
+		C243F5D9274E5CC200EB55CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C243F5D7274E5CC200EB55CE /* Main.storyboard */; };
+		C243F5DB274E5CCC00EB55CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C243F5DA274E5CCC00EB55CE /* Assets.xcassets */; };
+		C243F5DE274E5CCC00EB55CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C243F5DC274E5CCC00EB55CE /* LaunchScreen.storyboard */; };
+		C243F5E6274E5D2A00EB55CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243F5E5274E5D2A00EB55CE /* MainViewController.swift */; };
+		C2F9F76427ED45AB00A51A0C /* GasolinePriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9F76327ED45AB00A51A0C /* GasolinePriceViewController.swift */; };
+		C2F9F76627ED45D600A51A0C /* FuelEfficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9F76527ED45D600A51A0C /* FuelEfficiencyViewController.swift */; };
+		C2F9F76827ED489800A51A0C /* Gasoline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9F76727ED489800A51A0C /* Gasoline.swift */; };
+		C2F9F76A27ED497D00A51A0C /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9F76927ED497D00A51A0C /* model.swift */; };
+		C2F9F76C27ED54BC00A51A0C /* variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9F76B27ED54BC00A51A0C /* variables.swift */; };
+		C2F9F76E27ED5A2400A51A0C /* AvgFuelEfficiency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9F76D27ED5A2400A51A0C /* AvgFuelEfficiency.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C243F5CE274E5CC200EB55CE /* TravelCost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelCost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C243F5D1274E5CC200EB55CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C243F5D3274E5CC200EB55CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C243F5D8274E5CC200EB55CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C243F5DA274E5CCC00EB55CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C243F5DD274E5CCC00EB55CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C243F5DF274E5CCC00EB55CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C243F5E5274E5D2A00EB55CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C2F9F76327ED45AB00A51A0C /* GasolinePriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolinePriceViewController.swift; sourceTree = "<group>"; };
+		C2F9F76527ED45D600A51A0C /* FuelEfficiencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiencyViewController.swift; sourceTree = "<group>"; };
+		C2F9F76727ED489800A51A0C /* Gasoline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gasoline.swift; sourceTree = "<group>"; };
+		C2F9F76927ED497D00A51A0C /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		C2F9F76B27ED54BC00A51A0C /* variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = variables.swift; sourceTree = "<group>"; };
+		C2F9F76D27ED5A2400A51A0C /* AvgFuelEfficiency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgFuelEfficiency.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C243F5CB274E5CC200EB55CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C226E02627EF28B900F9B3EA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C2F9F76727ED489800A51A0C /* Gasoline.swift */,
+				C2F9F76D27ED5A2400A51A0C /* AvgFuelEfficiency.swift */,
+				C2F9F76927ED497D00A51A0C /* model.swift */,
+				C2F9F76B27ED54BC00A51A0C /* variables.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C226E02727EF28C100F9B3EA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C243F5E5274E5D2A00EB55CE /* MainViewController.swift */,
+				C2F9F76327ED45AB00A51A0C /* GasolinePriceViewController.swift */,
+				C2F9F76527ED45D600A51A0C /* FuelEfficiencyViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		C243F5C5274E5CC200EB55CE = {
+			isa = PBXGroup;
+			children = (
+				C243F5D0274E5CC200EB55CE /* TravelCost */,
+				C243F5CF274E5CC200EB55CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C243F5CF274E5CC200EB55CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C243F5CE274E5CC200EB55CE /* TravelCost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C243F5D0274E5CC200EB55CE /* TravelCost */ = {
+			isa = PBXGroup;
+			children = (
+				C226E02627EF28B900F9B3EA /* model */,
+				C226E02727EF28C100F9B3EA /* controller */,
+				C243F5D1274E5CC200EB55CE /* AppDelegate.swift */,
+				C243F5D3274E5CC200EB55CE /* SceneDelegate.swift */,
+				C243F5D7274E5CC200EB55CE /* Main.storyboard */,
+				C243F5DC274E5CCC00EB55CE /* LaunchScreen.storyboard */,
+				C243F5DA274E5CCC00EB55CE /* Assets.xcassets */,
+				C243F5DF274E5CCC00EB55CE /* Info.plist */,
+			);
+			path = TravelCost;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C243F5CD274E5CC200EB55CE /* TravelCost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C243F5E2274E5CCC00EB55CE /* Build configuration list for PBXNativeTarget "TravelCost" */;
+			buildPhases = (
+				C243F5CA274E5CC200EB55CE /* Sources */,
+				C243F5CB274E5CC200EB55CE /* Frameworks */,
+				C243F5CC274E5CC200EB55CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelCost;
+			productName = TravelCost;
+			productReference = C243F5CE274E5CC200EB55CE /* TravelCost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C243F5C6274E5CC200EB55CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C243F5CD274E5CC200EB55CE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = C243F5C9274E5CC200EB55CE /* Build configuration list for PBXProject "TravelCost" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C243F5C5274E5CC200EB55CE;
+			productRefGroup = C243F5CF274E5CC200EB55CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C243F5CD274E5CC200EB55CE /* TravelCost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C243F5CC274E5CC200EB55CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C243F5DE274E5CCC00EB55CE /* LaunchScreen.storyboard in Resources */,
+				C243F5DB274E5CCC00EB55CE /* Assets.xcassets in Resources */,
+				C243F5D9274E5CC200EB55CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C243F5CA274E5CC200EB55CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F9F76427ED45AB00A51A0C /* GasolinePriceViewController.swift in Sources */,
+				C243F5E6274E5D2A00EB55CE /* MainViewController.swift in Sources */,
+				C2F9F76627ED45D600A51A0C /* FuelEfficiencyViewController.swift in Sources */,
+				C2F9F76C27ED54BC00A51A0C /* variables.swift in Sources */,
+				C243F5D2274E5CC200EB55CE /* AppDelegate.swift in Sources */,
+				C243F5D4274E5CC200EB55CE /* SceneDelegate.swift in Sources */,
+				C2F9F76A27ED497D00A51A0C /* model.swift in Sources */,
+				C2F9F76827ED489800A51A0C /* Gasoline.swift in Sources */,
+				C2F9F76E27ED5A2400A51A0C /* AvgFuelEfficiency.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C243F5D7274E5CC200EB55CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C243F5D8274E5CC200EB55CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C243F5DC274E5CCC00EB55CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C243F5DD274E5CCC00EB55CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C243F5E0274E5CCC00EB55CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C243F5E1274E5CCC00EB55CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C243F5E3274E5CCC00EB55CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3U7YW6923F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelCost/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebear.TravelCost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C243F5E4274E5CCC00EB55CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3U7YW6923F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelCost/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebear.TravelCost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C243F5C9274E5CC200EB55CE /* Build configuration list for PBXProject "TravelCost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C243F5E0274E5CCC00EB55CE /* Debug */,
+				C243F5E1274E5CCC00EB55CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C243F5E2274E5CCC00EB55CE /* Build configuration list for PBXNativeTarget "TravelCost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C243F5E3274E5CCC00EB55CE /* Debug */,
+				C243F5E4274E5CCC00EB55CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C243F5C6274E5CC200EB55CE /* Project object */;
+}
