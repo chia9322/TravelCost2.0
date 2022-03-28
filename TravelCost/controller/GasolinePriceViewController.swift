@@ -12,6 +12,7 @@ class GasolinePriceViewController: UIViewController {
     @IBOutlet var regularButton: UIButton!
     @IBOutlet var highOctaneButton: UIButton!
     @IBOutlet var lightOilButton: UIButton!
+    @IBOutlet var cancelButton: UIButton!
     
     @IBOutlet var regularLabel: UILabel!
     @IBOutlet var highOctaneLabel: UILabel!
@@ -19,9 +20,15 @@ class GasolinePriceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        regularLabel.text = String(format: "%.1f", gasoline.regular) + "円"
-        highOctaneLabel.text = String(format: "%.1f", gasoline.highOctane) + "円"
-        lightOilLabel.text = String(format: "%.1f", gasoline.lightOil) + "円"
+        
+        regularButton.layer.cornerRadius = regularButton.frame.height/2
+        highOctaneButton.layer.cornerRadius = highOctaneButton.frame.height/2
+        lightOilButton.layer.cornerRadius = lightOilButton.frame.height/2
+        cancelButton.layer.cornerRadius = cancelButton.frame.height/2
+        
+        regularLabel.text = String(format: "%.0f", gasoline.regular) + "円"
+        highOctaneLabel.text = String(format: "%.0f", gasoline.highOctane) + "円"
+        lightOilLabel.text = String(format: "%.0f", gasoline.lightOil) + "円"
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -33,8 +40,5 @@ class GasolinePriceViewController: UIViewController {
         }
         performSegue(withIdentifier: "selectGasolinePrice", sender: nil)
     }
-    
-    
-    
 
 }

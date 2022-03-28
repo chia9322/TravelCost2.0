@@ -7,7 +7,15 @@
 
 import Foundation
 
-struct AvgFuelEfficiency {
+struct AvgFuelEfficiencyData: Codable {
+    let fuel: Fuel
+    struct Fuel: Codable {
+        let normal: Double
+        let light: Double
+    }
+}
+
+struct AvgFuelEfficiency: Codable {
     var normal: Double
     var light: Double
 }

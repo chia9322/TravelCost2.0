@@ -11,13 +11,18 @@ class FuelEfficiencyViewController: UIViewController {
 
     @IBOutlet var lightButton: UIButton!
     @IBOutlet var normalButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     @IBOutlet var lightLabel: UILabel!
     @IBOutlet var normalLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lightButton.layer.cornerRadius = lightButton.frame.height/2
+        normalButton.layer.cornerRadius = normalButton.frame.height/2
+        cancelButton.layer.cornerRadius = cancelButton.frame.height/2
+        
         lightLabel.text = String(format: "%.1f", avgFuelEfficiency.light) + "km / L"
         normalLabel.text = String(format: "%.1f", avgFuelEfficiency.normal) + "km / L"
     }
@@ -31,5 +36,4 @@ class FuelEfficiencyViewController: UIViewController {
         performSegue(withIdentifier: "selectFuelEfficiency", sender: nil)
     }
     
-
 }

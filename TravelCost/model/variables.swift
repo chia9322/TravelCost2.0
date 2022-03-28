@@ -8,10 +8,10 @@
 import Foundation
 
 var gasoline: Gasoline = Gasoline(highOctane: 180, lightOil: 150, regular: 170)
-var avgFuelEfficiency: AvgFuelEfficiency = AvgFuelEfficiency(normal: 12, light: 18)
+var avgFuelEfficiency: AvgFuelEfficiency = AvgFuelEfficiency(normal: 12.0, light: 18.0)
 
-var fuelEfficiency: Double = 10
 var gasolinePrice: Double = 150
+var fuelEfficiency: Double = 10
 
 func getUserDefaultValues() {
     let userDefault = UserDefaults.standard
