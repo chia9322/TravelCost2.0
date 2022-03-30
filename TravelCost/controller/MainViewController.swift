@@ -194,15 +194,34 @@ extension MainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 extension MainViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }
-        if text == "0" && string != "." {
-            textField.text = string
-            return false
-        } else if text == "" && string == "." {
+        if text == "" && string == "." {
             return false
         } else if text.contains(".") && string == "." {
             return false
         } else {
             return true
         }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == gasolinePriceTextField || textField == tollFeeTextField {
+            if let value = Double(textField.text!) {
+                textField.text = String(format: "%.0f", value)
+            }
+        } else if textField == fuelEfficiencyTextField || textField == distanceTextField {
+            textField.text = getOneDigitCleanTextFieldText(textField: textField)
+            textField.text = getOneDigitCleanTextFieldText(textField: textField)
+        }
+    }
+    
+    func getOneDigitCleanTextFieldText(textField: UITextField) -> String {
+        if let value = Double(textField.text!) {
+            if Int(value*10)%10 == 0 {
+                return String(format: "%.0f", value)
+            } else {
+                return String(format: "%.1f", value)
+            }
+        }
+        return String()
     }
 }
