@@ -210,13 +210,12 @@ extension MainViewController: UITextFieldDelegate {
             }
         } else if textField == fuelEfficiencyTextField || textField == distanceTextField {
             textField.text = getOneDigitCleanTextFieldText(textField: textField)
-            textField.text = getOneDigitCleanTextFieldText(textField: textField)
         }
     }
     
     func getOneDigitCleanTextFieldText(textField: UITextField) -> String {
         if let value = Double(textField.text!) {
-            if Int(value*10)%10 == 0 {
+            if Int((value*10).rounded())%10 == 0 {
                 return String(format: "%.0f", value)
             } else {
                 return String(format: "%.1f", value)
