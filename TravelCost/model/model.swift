@@ -45,3 +45,14 @@ func fetchFuelEfficiency() {
         }.resume()
     }
 }
+
+func getCleanNumber(text: String) -> String {
+    if let value = Double(text) {
+        if Int((value*10).rounded())%10 == 0 {
+            return String(format: "%.0f", value)
+        } else {
+            return String(format: "%.1f", value)
+        }
+    }
+    return String()
+}

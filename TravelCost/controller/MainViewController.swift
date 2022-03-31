@@ -113,11 +113,11 @@ class MainViewController: UIViewController {
         
     }
     @IBAction func selectGasolinePrice(_ segue: UIStoryboardSegue) {
-        gasolinePriceTextField.text = String(format: "%.0f", gasolinePrice)
+        gasolinePriceTextField.text = getCleanNumber(text: String(gasolinePrice))
         updateGasolinePriceInUserDefault()
     }
     @IBAction func selectFuelEfficiency(_ segue: UIStoryboardSegue) {
-        fuelEfficiencyTextField.text = String(format: "%.1f", fuelEfficiency)
+        fuelEfficiencyTextField.text = getCleanNumber(text: String(fuelEfficiency))
         updateFuelEfficiencyInUserDefault()
     }
 
@@ -204,23 +204,7 @@ extension MainViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField == gasolinePriceTextField || textField == tollFeeTextField {
-            if let value = Double(textField.text!) {
-                textField.text = String(format: "%.0f", value)
-            }
-        } else if textField == fuelEfficiencyTextField || textField == distanceTextField {
-            textField.text = getOneDigitCleanTextFieldText(textField: textField)
-        }
+        textField.text = getCleanNumber(text: textField.text!)
     }
     
-    func getOneDigitCleanTextFieldText(textField: UITextField) -> String {
-        if let value = Double(textField.text!) {
-            if Int((value*10).rounded())%10 == 0 {
-                return String(format: "%.0f", value)
-            } else {
-                return String(format: "%.1f", value)
-            }
-        }
-        return String()
-    }
 }

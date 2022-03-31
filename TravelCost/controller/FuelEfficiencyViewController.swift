@@ -23,8 +23,8 @@ class FuelEfficiencyViewController: UIViewController {
         normalButton.layer.cornerRadius = normalButton.frame.height/2
         cancelButton.layer.cornerRadius = cancelButton.frame.height/2
         
-        lightLabel.text = String(format: "%.1f", avgFuelEfficiency.light) + "km / L"
-        normalLabel.text = String(format: "%.1f", avgFuelEfficiency.normal) + "km / L"
+        lightLabel.text = getCleanNumber(text: String(avgFuelEfficiency.light)) + "km / L"
+        normalLabel.text = getCleanNumber(text: String(avgFuelEfficiency.normal)) + "km / L"
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
