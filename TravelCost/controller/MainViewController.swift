@@ -53,8 +53,8 @@ class MainViewController: UIViewController {
         
         // User Default
         getUserDefaultValues()
-        gasolinePriceTextField.text = String(format: "%.0f", gasolinePrice)
-        fuelEfficiencyTextField.text = String(format: "%.1f", fuelEfficiency)
+        gasolinePriceTextField.text = getCleanNumber(text: String(gasolinePrice))
+        fuelEfficiencyTextField.text = getCleanNumber(text: String(fuelEfficiency))
         
     }
     
